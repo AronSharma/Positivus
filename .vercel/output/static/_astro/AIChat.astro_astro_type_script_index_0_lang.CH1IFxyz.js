@@ -1,0 +1,9 @@
+import{g}from"./gemini.BeYf_VaR.js";const u=document.getElementById("chat-toggle"),s=document.getElementById("chat-window"),y=document.getElementById("chat-close"),a=document.getElementById("chat-messages"),o=document.getElementById("chat-input"),h=document.getElementById("chat-send");let i=!1;function m(){i=!i,i?(s?.classList.remove("hidden"),s?.classList.add("animate-fade-in-up")):(s?.classList.add("hidden"),s?.classList.remove("animate-fade-in-up"))}function l(e,t=!1){const n=document.createElement("div");n.className=t?"user-message flex justify-end":"ai-message";const d=document.createElement("div");d.className=t?"bg-green text-black rounded-lg p-3 max-w-xs":"bg-gray-100 rounded-lg p-3 max-w-xs";const c=document.createElement("p");c.className="text-sm",c.textContent=e,d.appendChild(c),n.appendChild(d),a?.appendChild(n),a?.scrollTo(0,a.scrollHeight)}async function r(){const e=o?.value.trim();if(!e)return;l(e,!0),o.value="";const t=document.createElement("div");t.id="typing-indicator",t.className="ai-message",t.innerHTML=`
+      <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+        <div class="flex space-x-1">
+          <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+          <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+          <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+        </div>
+      </div>
+    `,a?.appendChild(t),a?.scrollTo(0,a.scrollHeight);try{const n=await g.analyzeUserInput(e);document.getElementById("typing-indicator")?.remove(),l(n)}catch{document.getElementById("typing-indicator")?.remove(),l("Sorry, I'm having trouble connecting right now. Please try again!")}}u?.addEventListener("click",m);y?.addEventListener("click",m);h?.addEventListener("click",r);o?.addEventListener("keypress",e=>{e.key==="Enter"&&r()});

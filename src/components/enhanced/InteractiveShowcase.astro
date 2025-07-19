@@ -1,0 +1,312 @@
+---
+// Interactive AI Showcase Section
+---
+
+<section class="py-20 bg-black text-white relative overflow-hidden">
+  <!-- Animated Background -->
+  <div class="absolute inset-0">
+    <div class="mesh-gradient"></div>
+    <div class="floating-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">
+        Experience the <span class="text-green">Future</span>
+        <br />of Digital Marketing
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        Interact with our AI-powered tools and see real-time results. Every demo is live and powered by cutting-edge AI technology.
+      </p>
+    </div>
+
+    <!-- Interactive Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <!-- AI Content Generator -->
+      <div class="interactive-card bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-green transition-all duration-300 group">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-bold">AI Content Generator</h3>
+          <div class="w-3 h-3 bg-green rounded-full animate-pulse"></div>
+        </div>
+        
+        <div class="content-demo">
+          <input
+            type="text"
+            placeholder="Enter your topic..."
+            class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 mb-4 focus:border-green focus:outline-none"
+            id="content-input"
+          />
+          <button class="generate-content-btn w-full bg-green text-black py-2 rounded-lg hover:bg-white transition-colors">
+            Generate Content ✨
+          </button>
+          <div id="content-output" class="mt-4 p-4 bg-gray-800 rounded-lg min-h-20 text-sm text-gray-300">
+            Click generate to see AI magic happen...
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-time Analytics -->
+      <div class="interactive-card bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-600 hover:border-green transition-all duration-300 group">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-bold">Live Analytics</h3>
+          <div class="flex space-x-1">
+            <div class="w-2 h-2 bg-green rounded-full animate-ping"></div>
+            <div class="w-2 h-2 bg-yellow-400 rounded-full animate-ping" style="animation-delay: 0.2s;"></div>
+            <div class="w-2 h-2 bg-red-400 rounded-full animate-ping" style="animation-delay: 0.4s;"></div>
+          </div>
+        </div>
+        
+        <div class="analytics-demo">
+          <div class="grid grid-cols-2 gap-4 mb-4">
+            <div class="metric">
+              <div class="text-2xl font-bold text-green" id="visitors-count">1,247</div>
+              <div class="text-xs text-gray-400">Visitors Today</div>
+            </div>
+            <div class="metric">
+              <div class="text-2xl font-bold text-yellow-400" id="conversion-rate">12.4%</div>
+              <div class="text-xs text-gray-400">Conversion Rate</div>
+            </div>
+          </div>
+          
+          <div class="chart-container bg-gray-800 rounded-lg p-3">
+            <div class="flex items-end space-x-1 h-16">
+              <div class="live-bar bg-green opacity-60" style="height: 40%;"></div>
+              <div class="live-bar bg-green opacity-70" style="height: 60%;"></div>
+              <div class="live-bar bg-green opacity-80" style="height: 30%;"></div>
+              <div class="live-bar bg-green opacity-90" style="height: 80%;"></div>
+              <div class="live-bar bg-green" style="height: 50%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Strategy Assistant -->
+      <div class="interactive-card bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-6 border border-blue-600 hover:border-green transition-all duration-300 group md:col-span-2 lg:col-span-1">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-bold">Strategy Assistant</h3>
+          <div class="bg-green text-black px-2 py-1 rounded text-xs font-bold">LIVE AI</div>
+        </div>
+        
+        <div class="strategy-demo">
+          <select id="industry-select" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 mb-4 focus:border-green focus:outline-none">
+            <option value="">Select your industry...</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="saas">SaaS</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="education">Education</option>
+            <option value="finance">Finance</option>
+          </select>
+          <button class="get-strategy-btn w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-green hover:text-black transition-colors">
+            Get AI Strategy 🧠
+          </button>
+          <div id="strategy-output" class="mt-4 p-4 bg-gray-800 rounded-lg min-h-20 text-sm text-gray-300">
+            Select an industry to get personalized AI recommendations...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Demo CTA -->
+    <div class="text-center">
+      <div class="bg-gradient-to-r from-green to-yellow-400 rounded-2xl p-8 inline-block">
+        <h3 class="text-2xl font-bold text-black mb-4">Ready for a Personalized Demo?</h3>
+        <p class="text-black mb-6 max-w-md">
+          See how our AI can transform your specific business challenges into growth opportunities.
+        </p>
+        <button class="bg-black text-white px-8 py-4 rounded-xl font-bold hover:bg-gray-800 transition-colors">
+          Book Your Live AI Demo 🚀
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mesh-gradient {
+    background: 
+      radial-gradient(at 20% 50%, #1a1a2e 0%, transparent 50%),
+      radial-gradient(at 80% 20%, #16213e 0%, transparent 50%),
+      radial-gradient(at 40% 80%, #0f3460 0%, transparent 50%);
+    opacity: 0.8;
+  }
+
+  .floating-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #b9ff66;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float-particle 6s infinite linear;
+  }
+
+  .particle:nth-child(1) {
+    left: 20%;
+    animation-delay: 0s;
+    animation-duration: 8s;
+  }
+
+  .particle:nth-child(2) {
+    left: 40%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+  }
+
+  .particle:nth-child(3) {
+    left: 60%;
+    animation-delay: 4s;
+    animation-duration: 10s;
+  }
+
+  .particle:nth-child(4) {
+    left: 80%;
+    animation-delay: 6s;
+    animation-duration: 14s;
+  }
+
+  .particle:nth-child(5) {
+    left: 90%;
+    animation-delay: 8s;
+    animation-duration: 16s;
+  }
+
+  @keyframes float-particle {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(-100px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  .interactive-card {
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+
+  .interactive-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(185, 255, 102, 0.1);
+  }
+
+  .live-bar {
+    width: 8px;
+    border-radius: 2px;
+    transition: height 0.5s ease;
+    animation: pulse-height 2s infinite;
+  }
+
+  @keyframes pulse-height {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+  }
+</style>
+
+<script>
+  import { geminiAI } from '../../lib/gemini.ts';
+
+  // Content Generator
+  const contentInput = document.getElementById('content-input') as HTMLInputElement;
+  const contentOutput = document.getElementById('content-output');
+  const generateContentBtn = document.querySelector('.generate-content-btn');
+
+  generateContentBtn?.addEventListener('click', async () => {
+    const topic = contentInput?.value.trim();
+    if (!topic) {
+      contentInput?.focus();
+      return;
+    }
+
+    contentOutput!.innerHTML = '<div class="animate-pulse">🤖 AI is thinking...</div>';
+    generateContentBtn!.textContent = 'Generating...';
+
+    try {
+      const content = await geminiAI.generateMarketingCopy('social media post', topic);
+      contentOutput!.innerHTML = `<div class="text-green font-medium">✨ Generated Content:</div><div class="mt-2">${content}</div>`;
+    } catch (error) {
+      contentOutput!.innerHTML = '<div class="text-red-400">Error generating content. Please try again!</div>';
+    } finally {
+      generateContentBtn!.textContent = 'Generate Content ✨';
+    }
+  });
+
+  // Strategy Assistant
+  const industrySelect = document.getElementById('industry-select') as HTMLSelectElement;
+  const strategyOutput = document.getElementById('strategy-output');
+  const getStrategyBtn = document.querySelector('.get-strategy-btn');
+
+  getStrategyBtn?.addEventListener('click', async () => {
+    const industry = industrySelect?.value;
+    if (!industry) {
+      industrySelect?.focus();
+      return;
+    }
+
+    strategyOutput!.innerHTML = '<div class="animate-pulse">🧠 AI is analyzing your industry...</div>';
+    getStrategyBtn!.textContent = 'Analyzing...';
+
+    try {
+      const strategy = await geminiAI.generateMarketingCopy('marketing strategy', `${industry} industry digital marketing plan`);
+      strategyOutput!.innerHTML = `<div class="text-blue-400 font-medium">🎯 AI Strategy for ${industry}:</div><div class="mt-2">${strategy}</div>`;
+    } catch (error) {
+      strategyOutput!.innerHTML = '<div class="text-red-400">Error generating strategy. Please try again!</div>';
+    } finally {
+      getStrategyBtn!.textContent = 'Get AI Strategy 🧠';
+    }
+  });
+
+  // Live Analytics Animation
+  function updateAnalytics() {
+    const visitorsElement = document.getElementById('visitors-count');
+    const conversionElement = document.getElementById('conversion-rate');
+    const bars = document.querySelectorAll('.live-bar');
+
+    if (visitorsElement) {
+      const currentVisitors = parseInt(visitorsElement.textContent || '1247');
+      const newVisitors = currentVisitors + Math.floor(Math.random() * 10) - 5;
+      visitorsElement.textContent = Math.max(1000, newVisitors).toString();
+    }
+
+    if (conversionElement) {
+      const newRate = (10 + Math.random() * 5).toFixed(1);
+      conversionElement.textContent = `${newRate}%`;
+    }
+
+    bars.forEach(bar => {
+      const newHeight = Math.random() * 80 + 20;
+      (bar as HTMLElement).style.height = `${newHeight}%`;
+    });
+  }
+
+  // Update analytics every 3 seconds
+  setInterval(updateAnalytics, 3000);
+
+  // Enter key support for inputs
+  contentInput?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      (generateContentBtn as HTMLElement)?.click();
+    }
+  });
+</script>

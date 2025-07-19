@@ -2,37 +2,25 @@
     {
         "index": 1,
         "name": "John Smith",
-        "role": "Marketing dierector at XYZ",
-        "comment": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+        "role": "CEO",
+        "comment": "GUAMAC transformed our online presence! Their innovative designs and seamless development brought our vision to life. Their team's dedication and expertise exceeded our expectations. Highly recommend!"
     },
     {
         "index": 2,
-        "name": "Jane Doe",
-        "role": "CEO at ABC",
-        "comment": "We chose Positivus to help us with our SEO and PPC campaigns and have been very impressed with their results. They are knowledgeable, responsive, and truly care about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+        "name": "Michael Brown",
+        "role": "Business Owner",
+        "comment": "GUAMAC's professionalism and expertise made the entire process smooth and enjoyable. From concept to launch, they were responsive, collaborative, and committed to delivering excellence. Couldn't be happier with the outcome!"
     },
     {
         "index": 3,
-        "name": "Alice Johnson",
-        "role": "Owner at 123",
-        "comment": "I recently started working with Positivus and have been very impressed with their professionalism and expertise. They have helped me increase my online visibility and generate more leads for my business. I highly recommend Positivus to anyone looking to improve their online marketing strategy."
+        "name": "Rachel Graham",
+        "role": "Marketing Director",
+        "comment": "Working with GUAMAC was a game-changer for our business. Their creative solutions and attention to detail resulted in a stunning website that truly reflects our brand. We're thrilled with the results!"
     },
     {
         "index": 4,
-        "name": "Bob Brown",
-        "role": "Dierector at XYZ",
-        "comment": "Positivus has been a great partner for our company. They are knowledgeable, responsive, and truly care about the success of our business. We have seen a significant increase in website traffic and leads as a result of their efforts. I highly recommend Positivus to any company looking to grow their online presence."
-    },
-    {
-        "index": 5,
-        "name": "Gupta Patel",
-        "role": "Content creator",
-        "comment": "I have been working with Positivus for the past year and have been very impressed with their professionalism and expertise. They have helped me increase my online visibility and generate more leads for my business. I highly recommend Positivus to anyone looking to improve their online marketing strategy."
-    },
-    {
-        "index": 6,
-        "name": "Sara Johnson",
-        "role": "Freelancer",
-        "comment": "Positivus made a huge difference in our online presence. They are knowledgeable, responsive, and truly care about the success of our business. We have seen a significant increase in website traffic and leads as a result of their efforts. I highly recommend Positivus to any company looking to grow their online presence."
+        "name": "Emily Davis",
+        "role": "Startup Founder",
+        "comment": "Choosing GUAMAC was one of the best decisions we made for our business. Their team's strategic approach and technical prowess helped us achieve our goals and elevate our online presence. Thank you, GUAMAC!"
     }
 ]
