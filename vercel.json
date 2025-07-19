@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json", 
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/app/(.*)",
+      "dest": "https://guamac-app.vercel.app/$1",
+      "status": 301
+    },
+    {
+      "src": "/admin/(.*)", 
+      "dest": "https://guamac-admin.vercel.app/$1",
+      "status": 301
+    },
+    {
+      "src": "/forteam/(.*)",
+      "dest": "https://guamac-team.vercel.app/$1",
+      "status": 301
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

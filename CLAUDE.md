@@ -1,8 +1,16 @@
-# GUAMAC Business Solutions - Positivus Directory
+# GUAMAC Business Solutions - Company Website (Astro)
 
 ## Project Overview
 
-This is the **GUAMAC** company website built with Astro framework. GUAMAC is a comprehensive business solutions provider offering complete digital services including website design, mobile app development, e-commerce solutions, digital marketing, AI services, UI/UX design, cloud services, and SEO optimization.
+This is the **GUAMAC** main company website built with Astro framework, part of a comprehensive 3-application Firebase + Vercel hybrid architecture. GUAMAC is a comprehensive business solutions provider offering complete digital services including website design, mobile app development, e-commerce solutions, digital marketing, AI services, UI/UX design, cloud services, and SEO optimization.
+
+## Architecture Position
+
+This Astro application serves as **Application 2 of 3** in the GUAMAC ecosystem:
+- **Application 1**: Next.js AI Services Platform (`/src/` - main directory)
+- **Application 2**: Astro Company Website (`/Positivus/` - this directory) 
+- **Application 3**: Team Collaboration Platform (`/firebasee/`)
+- **Backend**: Firebase Functions with Gemini AI integration (`/functions/`)
 
 ## Tech Stack
 
@@ -32,6 +40,9 @@ This is the **GUAMAC** company website built with Astro framework. GUAMAC is a c
 ## Development Commands
 
 ```bash
+# From main project directory:
+cd Positivus
+
 # Development server (runs on port 4322)
 npm run dev
 
@@ -41,9 +52,23 @@ npm run build
 # Preview production build
 npm run preview
 
-# Start development server
+# Start development server (alias for dev)
 npm run start
 ```
+
+## Integration with Other Applications
+
+### Cross-Application Features
+- **Shared Firebase Backend**: Connects to same Firestore database as other apps
+- **Unified Branding**: Consistent GUAMAC branding across all platforms
+- **Navigation Links**: Links to AI services (`/app`) and team portal (`/forteam`)
+- **Environment Variables**: Shared Firebase configuration with main applications
+
+### URL Routing in Production
+- **Main Domain**: `guamac.com` → This Astro website
+- **AI Services**: `guamac.com/app` → Next.js AI platform
+- **Team Portal**: `guamac.com/forteam` → Team collaboration
+- **API Backend**: Firebase Functions for all applications
 
 ## Project Structure
 
@@ -146,18 +171,53 @@ src/
 
 ## Recent Updates
 
-### GUAMAC Branding Integration
-- ✅ Updated to official GUAMAC branding and logo
+### Firebase + Vercel Hybrid Integration (July 2025)
+- ✅ **Multi-App Architecture**: Integrated as part of 3-application ecosystem
+- ✅ **Vercel Deployment**: Configured for `guamac-main` project deployment
+- ✅ **URL Routing**: Set up subdirectory routing to other applications
+- ✅ **Shared Backend**: Connected to Firebase Functions and Firestore
+- ✅ **Cross-Platform Navigation**: Links to AI services and team portal
+- ✅ **Environment Configuration**: Shared Firebase config with other apps
+
+### GUAMAC Branding Integration (2025)
+- ✅ Updated to official GUAMAC branding and logo across all pages
 - ✅ Replaced all "Positivus" references with "GUAMAC"
-- ✅ Updated hero messaging and service descriptions
-- ✅ Integrated real GUAMAC contact information
+- ✅ Updated hero messaging: "Elevating Digital Excellence Together"
+- ✅ Integrated real GUAMAC contact information and business details
 - ✅ Updated testimonials with GUAMAC client feedback
 - ✅ Modern 2025 copyright and branding consistency
+- ✅ Responsive design optimized for all devices
 
 ## Development Notes
 
-- **Hot Reloading** - Automatic browser refresh during development
-- **Component Islands** - Selective JavaScript hydration for performance
-- **Type Safety** - Full TypeScript integration with error checking
-- **Modern Tooling** - Latest versions of all dependencies for security and performance
-- **Responsive Design** - Mobile-first approach with Tailwind utilities
+### Technical Specifications
+- **Node.js**: Version 18+ required
+- **Package Manager**: npm (compatible with yarn)
+- **Build System**: Astro with Vite under the hood
+- **Hot Reloading**: Automatic browser refresh during development
+- **Component Islands**: Selective JavaScript hydration for performance
+- **Type Safety**: Full TypeScript integration with error checking
+- **Modern Tooling**: Latest versions of all dependencies for security and performance
+- **Responsive Design**: Mobile-first approach with Tailwind utilities
+
+### Development Workflow
+1. **Start from main directory**: `cd Positivus`
+2. **Install dependencies**: `npm install` (if not done)
+3. **Start development**: `npm run dev`
+4. **Access website**: http://localhost:4322
+5. **Build for production**: `npm run build`
+6. **Preview production**: `npm run preview`
+
+### Integration Testing
+- **Cross-app navigation**: Test links to `/app` and `/forteam`
+- **Responsive design**: Test on mobile, tablet, and desktop
+- **Performance**: Lighthouse scores and Core Web Vitals
+- **SEO**: Meta tags and structured data validation
+
+### Deployment Checklist
+- [ ] All GUAMAC branding updated
+- [ ] Contact information accurate
+- [ ] Links to other applications working
+- [ ] Responsive design tested
+- [ ] Build process successful
+- [ ] Vercel deployment configured
